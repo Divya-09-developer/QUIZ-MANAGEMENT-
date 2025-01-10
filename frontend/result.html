@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="styles6.css">
+</head>
+<body>
+    <div id="result-container"></div>
+    <div class="button-container">
+        <button onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Display Quiz Result
+        async function displayResult() {
+            const result = JSON.parse(localStorage.getItem('quizResult'));
+            const resultContainer = document.getElementById('result-container');
+
+            if (result) {
+                resultContainer.innerHTML = `<h2>Quiz Results</h2>`;
+                resultContainer.innerHTML += `<p>Score: ${result.score}/${result.total}</p>`;
+                result.responses.forEach(response => {
+                    resultContainer.innerHTML += `<p>Question: ${response.question} - Your Answer: ${response.selectedOption} - Correct Answer: ${response.correctOption} - ${response.isCorrect ? 'Correct' : 'Wrong'}</p>`;
+                });
+            } else {
+                resultContainer.innerHTML = '<p>No results available.</p>';
+            }
+        }
+
+        // Call displayResult() on page load
+        if (window.location.pathname.endsWith('result.html')) {
+            displayResult();
+        }
+    </script>
+</body>
+</html>

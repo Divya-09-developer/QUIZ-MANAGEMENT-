@@ -1,0 +1,79 @@
+/* styles.css */
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #2b2b2b, #4d4d4d); /* Gradient background with different shades of grey */
+    font-family: 'Arial', sans-serif;
+    color: #f0f0f0; /* Light grey text for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for depth */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Soft shadow for subtle elevation */
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    backdrop-filter: blur(5px); /* Blur effect for the background */
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffffff; /* White text for contrast */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7); /* Subtle text shadow */
+}
+
+/* Quiz Container */
+#quiz-container {
+    margin-bottom: 20px;
+    color: #dddddd; /* Slightly lighter grey for the text */
+}
+
+/* Button Styling */
+button, a.btn {
+    background-color: #555555; /* Dark grey button */
+    color: #ffffff;
+    border: none;
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Remove underline from links styled as buttons */
+    display: inline-block;
+    margin: 10px 5px; /* Space between buttons */
+}
+
+button:hover, a.btn:hover {
+    background-color: #777777; /* Lighter grey on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); /* Light shadow on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button, a.btn {
+        font-size: 1rem;
+        padding: 10px 30px;
+    }
+}

@@ -1,0 +1,80 @@
+/* styles.css */
+
+/* Body Styling */
+body {
+    background: url('quiz.jpg') no-repeat center center fixed; /* Background image related to quizzes */
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    filter: grayscale(0.8); /* Monochrome effect on the entire body */
+}
+
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque white background for contrast */
+    backdrop-filter: blur(10px); /* Soft blur effect for depth */
+    padding: 40px;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+}
+
+/* Enhanced Heading */
+h1 {
+    font-size: 2.5rem; /* Increased heading size */
+    color: #333; /* Dark gray for visibility */
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+.btn-primary,
+.btn-secondary {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px; /* Smoother corners */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Bootstrap secondary color */
+    color: white;
+}
+
+/* Button Hover Effects */
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade of primary */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Darker shade of secondary */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+    .container {
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Smaller heading on mobile */
+    }
+
+    .btn-primary, .btn-secondary {
+        font-size: 1rem; /* Smaller button text */
+        padding: 10px 20px; /* Smaller button padding */
+    }
+}

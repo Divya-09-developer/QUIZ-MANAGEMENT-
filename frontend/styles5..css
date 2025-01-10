@@ -1,0 +1,94 @@
+/* styles5.css */
+
+/* Body Styling */
+body {
+    background: url('quiz.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    display:flex;
+    flex-direction: column; /* Stack title and container vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh;
+    margin: 0;
+    filter: grayscale(0.85);
+}
+
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: px;
+    width: 100%;
+    margin-top: 20px; /* Space between title and container */
+}
+
+/* Enhanced Heading */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px; /* Adjust spacing between the title and container */
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+}
+
+/* Quiz Container */
+#quiz-container {
+    margin-bottom: 30px;
+    background: rgba(245, 245, 245, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #333;
+    border: none;
+    padding: 12px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background-color: #555;
+    border: none;
+    padding: 12px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-left: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #777;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}

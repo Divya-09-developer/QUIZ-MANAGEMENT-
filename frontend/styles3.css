@@ -1,0 +1,106 @@
+/* styles3.css */
+
+/* Body Styling */
+body {
+    background: url('quiz.jpg') no-repeat center center fixed; /* Background image related to education */
+    background-size: cover; /* Ensure the background covers the entire viewport */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    filter: grayscale(0.8); /* Grayscale effect for the monochrome theme */
+}
+
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Slight opacity for contrast */
+    backdrop-filter: blur(10px); /* Subtle blur for depth */
+    padding: 40px;
+    border-radius: 15px; /* Smooth rounded edges */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    margin-top: 50px;
+}
+
+/* Enhanced Heading */
+h1 {
+    font-size: 2.5rem;
+    color: #333; /* Darker shade of gray for the heading */
+    margin-bottom: 30px;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    color: #333; /* Dark gray for label text */
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.8); /* Slight opacity for better readability */
+    border: 2px solid #ccc; /* Light gray border */
+    padding: 12px;
+    font-size: 1.1rem;
+    color: #333;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #555; /* Darker shade of gray on focus */
+    box-shadow: 0 0 10px rgba(85, 85, 85, 0.5); /* Focus shadow effect */
+    outline: none;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #333; /* Dark gray background for buttons */
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #555; /* Lighter shade of gray on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Link Styling */
+a.btn-link {
+    color: #333;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a.btn-link:hover {
+    color: #555; /* Darker gray hover effect */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+    .container {
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .btn-primary {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 10px 25px; /* Adjust button padding */
+    }
+}

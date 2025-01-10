@@ -1,0 +1,98 @@
+/* styles6.css */
+
+/* Body Styling */
+body {
+    background: url('quiz.jpg'); /* Gradient background in shades of grey */
+    font-family: 'Arial', sans-serif;
+    color: #f1f1f1; /* Light text for contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+#result-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent white for depth */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Soft shadow for elevation */
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(8px); /* Background blur effect */
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f8f8f8;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+/* Result Text Styling */
+p {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Correct/Incorrect Highlight */
+p.correct {
+    color: #4CAF50; /* Green for correct answers */
+}
+
+p.wrong {
+    color: #FF5722; /* Red for wrong answers */
+}
+
+/* Button Styling */
+button {
+    background-color: #555; /* Dark grey button */
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #777; /* Lighter grey on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Button Container Styling */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #result-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
+}
